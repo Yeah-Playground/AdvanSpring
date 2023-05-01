@@ -12,3 +12,4 @@ implementation("org.springframework.boot:spring-boot-starter-web")
 까먹을때마다 참고할 수 있는 index
 
 - GET 요청 : [HelloController](https://github.com/Yeah-Playground/AdvanSpring/blob/master/src/main/kotlin/io/yeahx4/advanspring/controller/HelloController.kt)
+- POST 요청 : [PostController](https://github.com/Yeah-Playground/AdvanSpring/blob/master/src/main/kotlin/io/yeahx4/advanspring/controller/PostController.kt)

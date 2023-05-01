@@ -5,6 +5,8 @@ import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.RequestParam
 import org.springframework.web.bind.annotation.RestController
 
+// 반복되는 /hello가 싫다면
+// @RequestMapping("/hello") 로 해결가능
 @RestController
 class HelloController {
     @GetMapping("/hello")
