@@ -33,3 +33,32 @@ implementation("org.springframework.boot:spring-boot-starter-web")
 - Test
   - Test : TBD
   - Coverage : TBD
+
+## Tips
+1. [application.properties](https://github.com/Yeah-Playground/AdvanSpring/blob/master/src/main/resources/application.properties)
+```properties
+spring.jpa.hibernate.ddl-auto=update
+```
+  - create : DROP + CREATE (for local)
+  - create-drop : DROP + CREATE + DROP(종료) (for local)
+  - update : 변경내용만 반영 (not for prod)
+  - validate : Entity-table 비교 (prod)
+  - none
+
+2. `@PostMapping` 관련 문제
+- 404 : 만약 `@PostMapping("/")` 라면 요청한 URL이 `/`로 끝나는지 확인할 것. (ex. `example.com/product/`)
+- 403 : CSRF 비활성화
+```kt
+implementation("org.springframework.boot:spring-boot-starter-security")
+```
+```kt
+@Configuration
+class SpringConfig {
+    @Bean
+    fun securityFilterChain(http: HttpSecurity): SecurityFilterChain {
+        http.csrf().disable()
+
+        return http.build()
+    }
+}
+```
