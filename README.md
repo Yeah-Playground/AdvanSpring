@@ -11,5 +11,25 @@ implementation("org.springframework.boot:spring-boot-starter-web")
 ## Reference
 까먹을때마다 참고할 수 있는 index
 
-- GET 요청 : [HelloController](https://github.com/Yeah-Playground/AdvanSpring/blob/master/src/main/kotlin/io/yeahx4/advanspring/controller/HelloController.kt)
-- POST 요청 : [PostController](https://github.com/Yeah-Playground/AdvanSpring/blob/master/src/main/kotlin/io/yeahx4/advanspring/controller/PostController.kt)
+- HTTP Request Handling
+  - GET 요청 : [HelloController](https://github.com/Yeah-Playground/AdvanSpring/blob/master/src/main/kotlin/io/yeahx4/advanspring/controller/HelloController.kt)
+  - POST 요청 : [PostController](https://github.com/Yeah-Playground/AdvanSpring/blob/master/src/main/kotlin/io/yeahx4/advanspring/controller/PostController.kt)
+  - PUT 요청 : `@PutMapping`
+  - Delete 요청 : `@DeleteMapping`
+- Database
+  - DTO : [ProductDto](https://github.com/Yeah-Playground/AdvanSpring/blob/master/src/main/kotlin/io/yeahx4/advanspring/dto/ProductDto.kt)
+  - Entity : [ProductEntity](https://github.com/Yeah-Playground/AdvanSpring/blob/master/src/main/kotlin/io/yeahx4/advanspring/entity/ProductEntity.kt)
+  - DAO :
+    - [ProductDao](https://github.com/Yeah-Playground/AdvanSpring/blob/master/src/main/kotlin/io/yeahx4/advanspring/dao/ProductDao.kt)
+    - [ProductDaoImpl](https://github.com/Yeah-Playground/AdvanSpring/blob/master/src/main/kotlin/io/yeahx4/advanspring/dao/impl/ProductDaoImpl.kt)
+  - Repository : [ProductRepository](https://github.com/Yeah-Playground/AdvanSpring/blob/master/src/main/kotlin/io/yeahx4/advanspring/repository/ProductRepository.kt)
+  - Service :
+    - [ProductService](https://github.com/Yeah-Playground/AdvanSpring/blob/master/src/main/kotlin/io/yeahx4/advanspring/service/ProductService.kt)
+    - [ProductServiceImpl](https://github.com/Yeah-Playground/AdvanSpring/blob/master/src/main/kotlin/io/yeahx4/advanspring/service/impl/ProductServiceImpl.kt) 
+  - Controller : [ProductController](https://github.com/Yeah-Playground/AdvanSpring/blob/master/src/main/kotlin/io/yeahx4/advanspring/controller/ProductController.kt)
+- Logging : TBD
+- Validation : TBD
+- Exception : TBD
+- Test
+  - Test : TBD
+  - Coverage : TBD
