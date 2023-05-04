@@ -37,8 +37,9 @@ implementation("org.springframework.boot:spring-boot-starter-web")
   - Global : [ExceptionAdviceHandler](https://github.com/Yeah-Playground/AdvanSpring/blob/master/src/main/kotlin/io/yeahx4/advanspring/exception/ExceptionAdviceHandler.kt)
 - RestTemplate : [RestTemplateImpl](https://github.com/Yeah-Playground/AdvanSpring/blob/master/src/main/kotlin/io/yeahx4/advanspring/service/impl/RestTemplateImpl.kt)
 - Test
-  - Test : TBD
-  - Coverage : TBD
+  - Test : [ProductControllerTest](https://github.com/Yeah-Playground/AdvanSpring/blob/master/src/test/kotlin/io/yeahx4/advanspring/controller/ProductControllerTest.kt)
+    MockMvc를 사용하는 경우 필요한 Bean만 로드해서 Mock을 생성하기 때문에 Security관련 Configuration이 로드되지 않는다.
+    그래서, 401 Unauthorized나 403 Forbidden 에러가 발생할 수 있다.
 
 ## Tips
 1. [application.properties](https://github.com/Yeah-Playground/AdvanSpring/blob/master/src/main/resources/application.properties)
