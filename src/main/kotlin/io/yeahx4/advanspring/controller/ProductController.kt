@@ -2,6 +2,7 @@ package io.yeahx4.advanspring.controller
 
 import io.yeahx4.advanspring.dto.ProductDto
 import io.yeahx4.advanspring.service.ProductService
+import jakarta.validation.Valid
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.PostMapping
@@ -21,7 +22,7 @@ class ProductController(private val productService: ProductService) {
     fun test() = "Hello World"
 
     @PostMapping("/")
-    fun createProduct(@RequestBody productDto: ProductDto): ProductDto {
+    fun createProduct(@RequestBody @Valid productDto: ProductDto): ProductDto {
         val name = productDto.productName
         val price = productDto.productPrice
         val stock = productDto.productStock

@@ -21,6 +21,7 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.mariadb.jdbc:mariadb-java-client:2.1.2")
     implementation("org.springframework.boot:spring-boot-starter-security")
+    implementation("org.springframework.boot:spring-boot-starter-validation")
 
     implementation("org.jetbrains.kotlin:kotlin-reflect")
 
