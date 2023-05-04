@@ -32,7 +32,10 @@ implementation("org.springframework.boot:spring-boot-starter-web")
   - starter-validation 추가
   - DTO : [ProductDto](https://github.com/Yeah-Playground/AdvanSpring/blob/master/src/main/kotlin/io/yeahx4/advanspring/dto/ProductDto.kt)
   - Controller의 DTO를 받는 인자에 @Valid 붙이기
-- Exception : TBD
+- Exception
+  - Controller : [ExceptionController](https://github.com/Yeah-Playground/AdvanSpring/blob/master/src/main/kotlin/io/yeahx4/advanspring/controller/ExceptionController.kt)
+  - Global : [ExceptionAdviceHandler](https://github.com/Yeah-Playground/AdvanSpring/blob/master/src/main/kotlin/io/yeahx4/advanspring/exception/ExceptionAdviceHandler.kt)
+- RestTemplate : [RestTemplateImpl](https://github.com/Yeah-Playground/AdvanSpring/blob/master/src/main/kotlin/io/yeahx4/advanspring/service/impl/RestTemplateImpl.kt)
 - Test
   - Test : TBD
   - Coverage : TBD
