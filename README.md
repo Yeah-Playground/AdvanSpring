@@ -27,7 +27,7 @@ implementation("org.springframework.boot:spring-boot-starter-web")
     - [ProductService](https://github.com/Yeah-Playground/AdvanSpring/blob/master/src/main/kotlin/io/yeahx4/advanspring/service/ProductService.kt)
     - [ProductServiceImpl](https://github.com/Yeah-Playground/AdvanSpring/blob/master/src/main/kotlin/io/yeahx4/advanspring/service/impl/ProductServiceImpl.kt) 
   - Controller : [ProductController](https://github.com/Yeah-Playground/AdvanSpring/blob/master/src/main/kotlin/io/yeahx4/advanspring/controller/ProductController.kt)
-- Logging : TBD
+- Logging : [HelloController](https://github.com/Yeah-Playground/AdvanSpring/blob/master/src/main/kotlin/io/yeahx4/advanspring/controller/HelloController.kt)
 - Validation : TBD
 - Exception : TBD
 - Test
