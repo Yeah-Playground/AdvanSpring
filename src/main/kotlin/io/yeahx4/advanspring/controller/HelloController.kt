@@ -1,5 +1,6 @@
 package io.yeahx4.advanspring.controller
 
+import org.slf4j.LoggerFactory
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.RequestParam
@@ -9,6 +10,8 @@ import org.springframework.web.bind.annotation.RestController
 // @RequestMapping("/hello") 로 해결가능
 @RestController
 class HelloController {
+    private val logger = LoggerFactory.getLogger(this::class.java)
+
     @GetMapping("/hello")
     fun hello() = "Hello World"
 
@@ -45,4 +48,14 @@ class HelloController {
 
     @GetMapping("/hello/dto")
     fun helloDto(dto: MemberDto) = dto.toString()
+
+    // Logging test
+    @GetMapping("/hello/log")
+    fun logHello() {
+        logger.trace("Trace!!")
+        logger.debug("Debug!!")
+        logger.info("Info!!")
+        logger.warn("Warning!")
+        logger.error("Error!")
+    }
 }
